@@ -42,7 +42,7 @@ function HomePage() {
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-2 md:gap-12 md:px-6 md:py-28 lg:py-36">
           <div className="text-primary-foreground">
             <div className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-white/5 px-4 py-1.5 text-xs uppercase tracking-widest text-accent backdrop-blur">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" /> Open 24/7 in Coimbatore
+              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" /> Open 24/7 in Mettupalayam
             </div>
             <h1 className="mt-5 font-serif text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
               One Stop for All Your <span className="text-accent">Building Needs</span>
