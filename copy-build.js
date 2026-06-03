@@ -43,7 +43,7 @@ try {
   copyRecursive(clientDir, buildDir);
   console.log('✓ Build files copied from dist/client to build/');
   
-  // Fix the index.html to reference the bundled JavaScript instead of source files
+  // Fix the index.html to reference the bundled JavaScript and CSS
   const indexPath = path.join(buildDir, 'index.html');
   let html = fs.readFileSync(indexPath, 'utf-8');
   
@@ -52,6 +52,7 @@ try {
   const files = fs.readdirSync(assetsDir);
   let mainBundle = null;
   let maxSize = 0;
+  let cssFile = null;
   
   files.forEach(f => {
     if (f.match(/^index-[a-z0-9_-]+\.js$/i)) {
@@ -61,7 +62,20 @@ try {
         mainBundle = f;
       }
     }
+    // Find the main CSS file
+    if (f.match(/^styles-[a-z0-9_-]+\.css$/i)) {
+      cssFile = f;
+    }
   });
+  
+  // Inject CSS link into head if it exists
+  if (cssFile) {
+    html = html.replace(
+      '</head>',
+      `    <link rel="stylesheet" href="/assets/${cssFile}" />\n  </head>`
+    );
+    console.log(`✓ Injected CSS link for /assets/${cssFile}`);
+  }
   
   if (mainBundle) {
     // Replace any script src pointing to /src/ with the bundled file
@@ -69,9 +83,11 @@ try {
       /src="\/src\/[^"]+"/g,
       `src="/assets/${mainBundle}"`
     );
-    fs.writeFileSync(indexPath, html, 'utf-8');
     console.log(`✓ Fixed index.html to reference /assets/${mainBundle}`);
   }
+  
+  // Write the updated HTML
+  fs.writeFileSync(indexPath, html, 'utf-8');
 } catch (error) {
   console.error('✗ Error copying build files:', error);
   process.exit(1);
