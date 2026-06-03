@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import yard from "@/assets/about-yard.jpg";
 import yard2 from "@/assets/about-yard2.jpg";
 import delivery from "@/assets/gallery-delivery.jpg";
-import blocks from "@/assets/prod-blocks.jpg";
+import blocks from "@/assets/prod-aac.jpg";
 import cement from "@/assets/prod-cement.jpg";
-import steel from "@/assets/prod-steel.jpg";
+import steel from "@/assets/prod-tmt.jpeg";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -22,10 +22,10 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const items = [
-  { src: yard, t: "Our Yard in Podanur" },
+  { src: yard, t: "Our Yard in Kurumbanoor" },
   { src: cement, t: "Cement Stock" },
   { src: steel, t: "TMT Steel Bars" },
-  { src: blocks, t: "Concrete Blocks" },
+  { src: blocks, t: "AAC & Hollow Blocks" },
   { src: yard2, t: "Materials Storage" },
   { src: delivery, t: "Site Delivery" },
 ];
@@ -37,7 +37,7 @@ function GalleryPage() {
         <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
           <div className="text-xs uppercase tracking-widest text-accent">Our Gallery</div>
           <h1 className="mt-3 font-serif text-4xl font-bold md:text-5xl">A Look Inside Our Yard</h1>
-          <p className="mt-5 text-white/80">Real photos from our Podanur facility and project sites across the region.</p>
+          <p className="mt-5 text-white/80">Real photos from our Kurumbanoor facility and project sites across the region.</p>
         </div>
       </section>
       <section className="mx-auto max-w-7xl px-4 py-20 md:px-6">

@@ -30,10 +30,10 @@ function AboutPage() {
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-20 md:grid-cols-2 md:items-center md:px-6">
-        <img src={aboutYard} alt="Cheran & Co. yard in Podanur" className="rounded-2xl shadow-[var(--shadow-elegant)]" loading="lazy" />
+        <img src={aboutYard} alt="Cheran & Co. yard in Kurumbanoor" className="rounded-2xl shadow-[var(--shadow-elegant)]" loading="lazy" />
         <div>
           <h2 className="font-serif text-3xl font-bold text-navy md:text-4xl">Who We Are</h2>
-          <p className="mt-4 text-muted-foreground">Located in Podanur, Coimbatore, Cheran & Co. is a full-service building materials supplier serving contractors, builders and homeowners across the region. From a single bag of cement to truckloads of aggregates, we handle orders of every size with the same commitment to quality and timeliness.</p>
+          <p className="mt-4 text-muted-foreground">Located in Kurumbanoor, Mettupalayam, Tamil Nadu, Cheran & Co. is a full-service building materials supplier serving contractors, builders and homeowners across the region. From a single bag of cement to truckloads of aggregates, we handle orders of every size with the same commitment to quality and timeliness.</p>
           <p className="mt-3 text-muted-foreground">Our partnerships with India's leading brands — Ramco, UltraTech, Dalmia and more — let us offer genuine products at competitive prices, with the added convenience of round-the-clock service.</p>
         </div>
       </section>
@@ -45,7 +45,7 @@ function AboutPage() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
-              { i: Target, t: "Our Mission", d: "Be Coimbatore's most reliable single-source supplier for every building material need." },
+              { i: Target, t: "Our Mission", d: "Be Mettupalayam's and the region's most reliable single-source supplier for every building material need." },
               { i: Heart, t: "Our Values", d: "Honesty in pricing, consistency in quality, and respect for every customer — big or small." },
               { i: Award, t: "Our Promise", d: "Genuine brands, on-time delivery, and a friendly team ready to help 24 hours a day." },
             ].map((c) => (

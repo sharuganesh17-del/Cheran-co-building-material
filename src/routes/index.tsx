@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
 const products = [
   { name: "Cement", desc: "Ramco, UltraTech, Dalmia & more — all leading brands." },
   { name: "Steel & TMT Bars", desc: "Premium-grade TMT bars in all required sizes." },
-  { name: "Concrete Blocks", desc: "Solid & hollow blocks for every construction need." },
+  { name: "AAC & Hollow Blocks", desc: "Lightweight AAC blocks and hollow blocks for efficient construction." },
   { name: "M-Sand & River Sand", desc: "Washed, graded sand for plastering & concreting." },
   { name: "Aggregates / Jelly", desc: "20mm, 12mm & 40mm jelly for all RCC works." },
   { name: "Bricks", desc: "Red bricks, fly-ash bricks & AAC blocks." },

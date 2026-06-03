@@ -1,15 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Phone } from "lucide-react";
 import imgCement from "@/assets/prod-cement.jpg";
-import imgSteel from "@/assets/prod-steel.jpg";
-import imgBlocks from "@/assets/prod-blocks.jpg";
+import imgSteel from "@/assets/prod-tmt.jpeg";
+import imgBlocks from "@/assets/prod-aac.jpg";
 import imgSand from "@/assets/prod-sand.jpg";
 import imgAggregates from "@/assets/prod-aggregates.jpg";
 import imgBricks from "@/assets/prod-bricks.jpg";
-import imgPlumbing from "@/assets/prod-plumbing.jpg";
 import imgHardware from "@/assets/prod-hardware.jpg";
 import imgJcb from "@/assets/rental-jcb.jpg";
-import imgDump from "@/assets/rental-dumptruck.jpg";
+import imgDump from "@/assets/prod-dump-truck.jpeg";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -29,11 +28,10 @@ export const Route = createFileRoute("/products")({
 const products = [
   { img: imgCement, name: "Cement", brands: "Ramco · UltraTech · Dalmia · Coromandel", desc: "OPC 43 & 53 grade, PPC and PSC cement in 50kg bags. Available in any quantity from a single bag to full truckloads." },
   { img: imgSteel, name: "Steel & TMT Bars", brands: "Fe 500 · Fe 550 · Fe 600", desc: "Premium TMT bars in 8mm, 10mm, 12mm, 16mm, 20mm and 25mm sizes from leading brands like TATA Tiscon, JSW and Vizag." },
-  { img: imgBlocks, name: "Concrete Blocks", brands: "Solid · Hollow · AAC", desc: "Manufactured with high-grade aggregates. Available in 4\", 6\", 8\" and custom sizes for walls and partitions." },
+  { img: imgBlocks, name: "AAC & Hollow Blocks", brands: "Lightweight · Durable · Thermal Insulation", desc: "Lightweight AAC blocks and high-quality hollow blocks for efficient construction with excellent thermal insulation properties." },
   { img: imgSand, name: "M-Sand & River Sand", brands: "Plastering · Concreting", desc: "Washed, sieved and graded sand for plastering, masonry and concreting work. Consistent quality, prompt delivery." },
   { img: imgAggregates, name: "Aggregates / Jelly", brands: "20mm · 12mm · 40mm", desc: "Crushed stone aggregates for RCC, foundations and road works. Sourced from reputed quarries." },
   { img: imgBricks, name: "Bricks", brands: "Red · Fly-ash · AAC", desc: "Traditional red bricks, eco-friendly fly-ash bricks and lightweight AAC blocks — choose what suits your project best." },
-  { img: imgPlumbing, name: "Plumbing & Electrical", brands: "On Request", desc: "Pipes, fittings, wires and basic electrical supplies — ask us for what you need and we'll arrange it." },
   { img: imgHardware, name: "Hardware & Tools", brands: "On Request", desc: "Nails, binding wire, tools and accessories to keep your site moving without trips to multiple shops." },
 ];
 
