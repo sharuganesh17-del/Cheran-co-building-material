@@ -9,11 +9,11 @@ import { CallEnquiry } from "@/components/CallEnquiry";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Cheran & Co. — Building Materials Supplier in Mettupalayam, Coimbatore" },
-      { name: "description", content: "Trusted supplier of cement, steel, blocks, sand & aggregates in Mettupalayam, Coimbatore. Open 24/7. Call us for a quick price." },
-      { name: "keywords", content: "building materials Mettupalayam, cement supplier, steel bars, concrete blocks, sand, aggregates" },
+      { title: "Cheran & Co. — Building Materials Supplier in Mettupalayam, Coimbatore, Ooty & Annur" },
+      { name: "description", content: "Quality building materials supplier since 2016. Cement, steel, blocks, sand & aggregates in Mettupalayam, Ooty, Coimbatore & Annur. 24/7 service with home delivery." },
+      { name: "keywords", content: "building materials Mettupalayam, cement supplier Mettupalayam, steel bars, sand, aggregates, Ooty, Coimbatore, Annur" },
       { property: "og:title", content: "Cheran & Co. — Building Materials Supplier" },
-      { property: "og:description", content: "Quality building materials in Mettupalayam. Cement, steel, blocks, sand & more delivered 24/7." },
+      { property: "og:description", content: "Quality building materials since 2016. Serving Mettupalayam, Ooty, Coimbatore & Annur. Open 24/7." },
       { property: "og:url", content: "https://cheranandco.in" },
     ],
     links: [{ rel: "canonical", href: "https://cheranandco.in/" }],

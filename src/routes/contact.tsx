@@ -5,11 +5,11 @@ import { CallEnquiry } from "@/components/CallEnquiry";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us — Cheran & Co. Building Materials Supplier in Mettupalayam" },
-      { name: "description", content: "Call +91 98654 67787 or visit our yard in Mettupalayam, Coimbatore. Open 24/7. Free delivery on orders." },
+      { title: "Contact Us — Cheran & Co. Building Materials Supplier" },
+      { name: "description", content: "Contact Cheran & Co. Call +91 98654 67787 or visit our facility in Mettupalayam. Serving Mettupalayam, Ooty, Coimbatore & Annur. Open 24/7." },
       { name: "keywords", content: "contact Cheran Co, building materials Mettupalayam, cement supplier contact" },
       { property: "og:title", content: "Contact — Cheran & Co. Mettupalayam" },
-      { property: "og:description", content: "Call, WhatsApp or visit us. Open 24/7 in Mettupalayam, Coimbatore." },
+      { property: "og:description", content: "Call, WhatsApp or visit us in Mettupalayam. Serving Mettupalayam, Ooty, Coimbatore & Annur. Open 24/7." },
       { property: "og:url", content: "https://cheranandco.in/contact" },
     ],
     links: [{ rel: "canonical", href: "https://cheranandco.in/contact" }],
@@ -57,7 +57,7 @@ function ContactPage() {
                 <MapPin className="h-5 w-5 shrink-0 text-accent" />
                 <div>
                   <div className="font-semibold text-navy">Visit Our Yard</div>
-                  <p className="mt-1 text-sm text-muted-foreground">Kurumbanoor, Mettupalayam, Tamil Nadu 641305</p>
+                  <p className="mt-1 text-sm text-muted-foreground">No. 1, Fathima Complex, Mettupalayam – 641301</p>
                   <a href="https://maps.app.goo.gl/aWmAhacPNxwa3JdP8" target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-sm font-semibold text-accent hover:underline">Open in Google Maps →</a>
                 </div>
               </div>

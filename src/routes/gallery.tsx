@@ -22,7 +22,7 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const items = [
-  { src: yard, t: "Our Yard in Kurumbanoor" },
+  { src: yard, t: "Our Yard in Mettupalayam" },
   { src: cement, t: "Cement Stock" },
   { src: steel, t: "TMT Steel Bars" },
   { src: blocks, t: "AAC & Hollow Blocks" },
@@ -37,7 +37,7 @@ function GalleryPage() {
         <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
           <div className="text-xs uppercase tracking-widest text-accent">Our Gallery</div>
           <h1 className="mt-3 font-serif text-4xl font-bold md:text-5xl">A Look Inside Our Yard</h1>
-          <p className="mt-5 text-white/80">Real photos from our Kurumbanoor facility and project sites across the region.</p>
+          <p className="mt-5 text-white/80">Real photos from our Mettupalayam facility and project sites across Mettupalayam, Ooty, Coimbatore and Annur.</p>
         </div>
       </section>
       <section className="mx-auto max-w-7xl px-4 py-20 md:px-6">
