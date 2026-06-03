@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cheranandco.in/sitemap.xml
+Host: https://cheranandco.in
