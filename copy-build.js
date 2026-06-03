@@ -41,13 +41,23 @@ try {
   const indexPath = path.join(buildDir, 'index.html');
   let html = fs.readFileSync(indexPath, 'utf-8');
   
-  // Find the main bundle file (largest .js file in assets)
+  // Find the main bundle file - the largest index-*.js file (typically > 100KB)
   const assetsDir = path.join(buildDir, 'assets');
   const files = fs.readdirSync(assetsDir);
-  const jsFiles = files.filter(f => f.match(/^index-[a-z0-9]+\.js$/i));
+  let mainBundle = null;
+  let maxSize = 0;
   
-  if (jsFiles.length > 0) {
-    const mainBundle = jsFiles[0];
+  files.forEach(f => {
+    if (f.match(/^index-[a-z0-9_-]+\.js$/i)) {
+      const size = fs.statSync(path.join(assetsDir, f)).size;
+      if (size > maxSize) {
+        maxSize = size;
+        mainBundle = f;
+      }
+    }
+  });
+  
+  if (mainBundle) {
     // Replace any script src pointing to /src/ with the bundled file
     html = html.replace(
       /src="\/src\/[^"]+"/g,
