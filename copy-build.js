@@ -34,6 +34,12 @@ function copyRecursive(src, dest) {
 }
 
 try {
+  // Clean the build directory first to remove stale files
+  if (fs.existsSync(buildDir)) {
+    fs.rmSync(buildDir, { recursive: true, force: true });
+  }
+  fs.mkdirSync(buildDir, { recursive: true });
+  
   copyRecursive(clientDir, buildDir);
   console.log('✓ Build files copied from dist/client to build/');
   
