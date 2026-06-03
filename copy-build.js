@@ -36,6 +36,26 @@ function copyRecursive(src, dest) {
 try {
   copyRecursive(clientDir, buildDir);
   console.log('✓ Build files copied from dist/client to build/');
+  
+  // Fix the index.html to reference the bundled JavaScript instead of source files
+  const indexPath = path.join(buildDir, 'index.html');
+  let html = fs.readFileSync(indexPath, 'utf-8');
+  
+  // Find the main bundle file (largest .js file in assets)
+  const assetsDir = path.join(buildDir, 'assets');
+  const files = fs.readdirSync(assetsDir);
+  const jsFiles = files.filter(f => f.match(/^index-[a-z0-9]+\.js$/i));
+  
+  if (jsFiles.length > 0) {
+    const mainBundle = jsFiles[0];
+    // Replace any script src pointing to /src/ with the bundled file
+    html = html.replace(
+      /src="\/src\/[^"]+"/g,
+      `src="/assets/${mainBundle}"`
+    );
+    fs.writeFileSync(indexPath, html, 'utf-8');
+    console.log(`✓ Fixed index.html to reference /assets/${mainBundle}`);
+  }
 } catch (error) {
   console.error('✗ Error copying build files:', error);
   process.exit(1);
