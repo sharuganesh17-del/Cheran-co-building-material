@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from "lucide-react";
-import logo from "@/assets/cheran-logo.asset.json";
+import logoImg from "@/assets/cheranlogo.jpeg";
 
 export function SiteFooter() {
   return (
@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-4 md:px-6">
         <div>
           <div className="flex items-center gap-3">
-            <img src={logo.url} alt="Cheran & Co." className="h-14 w-14 rounded-full ring-2 ring-accent" />
+            <img src={logoImg} alt="Cheran & Co." className="h-14 w-14 rounded-full ring-2 ring-accent" />
             <div>
               <div className="font-serif text-xl font-bold">Cheran <span className="text-accent">& Co.</span></div>
               <div className="text-[10px] uppercase tracking-widest text-white/60">Building Materials Supplier</div>
