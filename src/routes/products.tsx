@@ -6,7 +6,6 @@ import imgBlocks from "@/assets/prod-aac.jpg";
 import imgSand from "@/assets/prod-sand.jpg";
 import imgAggregates from "@/assets/prod-aggregates.jpg";
 import imgBricks from "@/assets/prod-bricks.jpg";
-import imgHardware from "@/assets/prod-hardware.jpg";
 import imgJcb from "@/assets/rental-jcb.jpg";
 import imgDump from "@/assets/prod-dump-truck.jpeg";
 
@@ -32,7 +31,6 @@ const products = [
   { img: imgSand, name: "M-Sand & River Sand", brands: "Plastering · Concreting", desc: "Washed, sieved and graded sand for plastering, masonry and concreting work. Consistent quality, prompt delivery." },
   { img: imgAggregates, name: "Aggregates / Jelly", brands: "20mm · 12mm · 40mm", desc: "Crushed stone aggregates for RCC, foundations and road works. Sourced from reputed quarries." },
   { img: imgBricks, name: "Bricks", brands: "Red · Fly-ash · AAC", desc: "Traditional red bricks, eco-friendly fly-ash bricks and lightweight AAC blocks — choose what suits your project best." },
-  { img: imgHardware, name: "Hardware & Tools", brands: "On Request", desc: "Nails, binding wire, tools and accessories to keep your site moving without trips to multiple shops." },
 ];
 
 const rentals = [
