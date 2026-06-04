@@ -2,13 +2,17 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "outputDirectory": "build",
-  "public": true,
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
+  "github": {
+    "silent": true
+  },
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(.+)\\..+$",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ],
   "headers": [
