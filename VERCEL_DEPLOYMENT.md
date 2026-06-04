@@ -11,7 +11,7 @@ This project is configured and ready to deploy on Vercel. Below are all the conf
 | Setting | Value |
 |---------|-------|
 | **Build Command** | `npm run build` |
-| **Output Directory** | `dist` |
+| **Output Directory** | `build` |
 | **Install Command** | `npm install` |
 | **Node Version** | 18.x or higher (recommended) |
 
@@ -37,7 +37,7 @@ When creating the project on Vercel, use these settings:
 
 **Framework:** Other  
 **Build Command:** `npm run build`  
-**Output Directory:** `dist`  
+**Output Directory:** `build`  
 **Install Command:** `npm install`  
 **Root Directory:** `./` (leave as default)
 
