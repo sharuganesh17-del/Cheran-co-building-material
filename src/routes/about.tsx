@@ -33,7 +33,7 @@ function AboutPage() {
         <img src={aboutYard} alt="Cheran & Co. yard in Mettupalayam" className="rounded-2xl shadow-[var(--shadow-elegant)]" loading="lazy" />
         <div>
           <h2 className="font-serif text-3xl font-bold text-navy md:text-4xl">Who We Are</h2>
-          <p className="mt-4 text-muted-foreground">Located at No. 1, Fathima Complex, Mettupalayam – 641301, Cheran & Co. is a full-service building materials supplier serving contractors, builders and homeowners across Mettupalayam, Ooty, Coimbatore and Annur. From a single bag of cement to truckloads of aggregates, we handle orders of every size with the same commitment to quality and timeliness.</p>
+          <p className="mt-4 text-muted-foreground">Located at Rk Complex, GD Hospital, Mettur, Podanur, Coimbatore, Tamil Nadu 641023, Cheran & Co. is a full-service building materials supplier serving contractors, builders and homeowners across Mettupalayam, Ooty, Coimbatore and Annur. From a single bag of cement to truckloads of aggregates, we handle orders of every size with the same commitment to quality and timeliness.</p>
           <p className="mt-3 text-muted-foreground">Our partnerships with India's leading brands — Ramco, UltraTech, Dalmia and more — let us offer genuine products at competitive prices, with the added convenience of round-the-clock service.</p>
         </div>
       </section>

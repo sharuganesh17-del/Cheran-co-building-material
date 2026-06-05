@@ -57,7 +57,7 @@ function ContactPage() {
                 <MapPin className="h-5 w-5 shrink-0 text-accent" />
                 <div>
                   <div className="font-semibold text-navy">Visit Our Yard</div>
-                  <p className="mt-1 text-sm text-muted-foreground">No. 1, Fathima Complex, Mettupalayam – 641301</p>
+                  <p className="mt-1 text-sm text-muted-foreground">Rk Complex, GD Hospital, Mettur, Podanur, Coimbatore, Tamil Nadu 641023</p>
                   <a href="https://maps.app.goo.gl/aWmAhacPNxwa3JdP8" target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-sm font-semibold text-accent hover:underline">Open in Google Maps →</a>
                 </div>
               </div>

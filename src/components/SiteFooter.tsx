@@ -28,7 +28,7 @@ export function SiteFooter() {
         <div>
           <h4 className="mb-4 font-serif text-lg text-accent">Contact</h4>
           <ul className="space-y-3 text-sm text-white/80">
-            <li className="flex gap-2"><MapPin className="h-4 w-4 shrink-0 text-accent" /> No. 1, Fathima Complex, Mettupalayam – 641301</li>
+            <li className="flex gap-2"><MapPin className="h-4 w-4 shrink-0 text-accent" /> Rk Complex, GD Hospital, Mettur, Podanur, Coimbatore, Tamil Nadu 641023</li>
             <li className="flex gap-2"><Phone className="h-4 w-4 shrink-0 text-accent" /> <a href="tel:+919865467787" className="hover:text-accent">+91 98654 67787</a></li>
             <li className="flex gap-2"><Phone className="h-4 w-4 shrink-0 text-accent" /> <a href="tel:+919842212388" className="hover:text-accent">+91 98422 12388</a></li>
             <li className="flex gap-2"><Mail className="h-4 w-4 shrink-0 text-accent" /> <a href="mailto:cheran.co.build@gmail.com" className="hover:text-accent">cheran.co.build@gmail.com</a></li>
