@@ -94,8 +94,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@cheranandco" },
       { name: "twitter:title", content: "Cheran & Co. — Building Materials Supplier in Mettupalayam" },
       { name: "twitter:description", content: "Quality building materials & equipment rental in Mettupalayam, Coimbatore." },
-      { property: "og:image", content: "https://cheranandco.in/logo.jpg" },
-      { name: "twitter:image", content: "https://cheranandco.in/logo.jpg" },
+      { property: "og:image", content: "https://cheranandco.in/logo.jpeg" },
+      { name: "twitter:image", content: "https://cheranandco.in/logo.jpeg" },
       { name: "robots", content: "index, follow" },
       { name: "language", content: "English" },
       { name: "geo.placename", content: "Mettupalayam, Coimbatore, Tamil Nadu, India" },
@@ -110,7 +110,48 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" },
+      { rel: "icon", href: "/logo.jpeg", type: "image/jpeg" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Cheran & Co.",
+          "description": "Quality building materials supplier in Mettupalayam, Coimbatore. Cement, steel, blocks, sand, aggregates & equipment rental.",
+          "url": "https://cheranandco.in",
+          "telephone": "+919865467787",
+          "email": "cheran.co.build@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "No. 1, Fathima Complex, Rk Complex, GD Hospital, Mettur, Podanur",
+            "addressLocality": "Coimbatore",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "641023",
+            "addressCountry": "IN"
+          },
+          "image": "https://cheranandco.in/logo.jpeg",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://cheranandco.in/logo.jpeg",
+            "width": 200,
+            "height": 200
+          },
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61590624419459",
+            "https://www.instagram.com/cheran.co.build/",
+            "https://maps.app.goo.gl/aWmAhacPNxwa3JdP8"
+          ],
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        })
+      }
+    ]
   }),
   shellComponent: RootShell,
   component: RootComponent,
